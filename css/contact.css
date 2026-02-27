@@ -149,3 +149,49 @@
   color: var(--gold);
 }
 
+@media (max-width: 900px) {
+  .contact {
+    padding: 5rem 2rem;
+  }
+
+  .contact-inner {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 4rem 1.5rem;
+  }
+
+  .contact-inner {
+    gap: 2.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    max-width: none;
+  }
+
+  .submit-btn {
+    width: 100%;
+    align-self: stretch;
+    min-height: 48px;
+    cursor: pointer;
+  }
+
+  .contact-left h2 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+

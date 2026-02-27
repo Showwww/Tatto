@@ -133,3 +133,39 @@
   font-family: 'Bebas Neue', sans-serif;
 }
 
+@media (max-width: 900px) {
+  .craft {
+    grid-template-columns: 1fr;
+    padding: 6rem 2rem;
+    gap: 4rem;
+  }
+
+  .craft-visual {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .craft {
+    padding: 4rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .craft-visual {
+    height: 280px;
+  }
+
+  .craft-left h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .craft-quote {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .craft-quote blockquote {
+    font-size: 1.15rem;
+  }
+}
+

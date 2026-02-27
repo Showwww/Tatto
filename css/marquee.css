@@ -28,3 +28,15 @@
   opacity: 1;
 }
 
+@media (max-width: 600px) {
+  .marquee-section {
+    padding: 0.9rem 0;
+  }
+
+  .marquee-item {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    padding: 0 2rem;
+  }
+}
+

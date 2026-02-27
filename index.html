@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/hero.css" />
-    <link rel="stylesheet" href="./css/hero-particles.css" />
     <link rel="stylesheet" href="./css/marquee.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/work.css" />
@@ -26,7 +25,7 @@
     <div class="cursor-ring" id="cursorRing"></div>
 
     <!-- NAV -->
-    <nav>
+    <nav id="nav">
       <div class="nav-logo">
         <img
           src="./assets/images/logo/logo.png"
@@ -34,6 +33,11 @@
           class="nav-logo-img"
         />
       </div>
+      <button type="button" class="nav-burger" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#about">Про мене</a></li>
         <li><a href="#work">Роботи</a></li>
@@ -239,7 +243,7 @@
     </footer>
 
     <script src="./js/cursor.js"></script>
-    <script src="./js/reveal.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/work-carousel.js"></script>
   </body>
 </html>

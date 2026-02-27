@@ -152,3 +152,40 @@
   font-family: 'Bebas Neue', sans-serif;
 }
 
+@media (max-width: 900px) {
+  .hero-left {
+    width: 100%;
+    padding: 7rem 1.5rem 5rem;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.1rem, 4vw, 1.45rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left {
+    padding: 6rem 1.25rem 4rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    gap: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-scroll {
+    bottom: 1.5rem;
+  }
+
+  .scroll-line {
+    height: 36px;
+  }
+}
+

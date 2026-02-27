@@ -2,6 +2,7 @@
 .work {
   background: var(--ink);
   padding: 7rem 0;
+  overflow-x: hidden;
 }
 
 .work-carousel {
@@ -19,6 +20,7 @@
 
 .work-slide {
   flex: 0 0 25%;
+  min-width: 0;
   border-radius: 18px;
   overflow: hidden;
 }
@@ -42,11 +44,25 @@
 
 @media (max-width: 600px) {
   .work-carousel {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .work {
+    padding: 4rem 0;
   }
 
   .work-slide {
     flex-basis: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .work-carousel {
+    padding: 0 0.75rem;
+  }
+
+  .work-slide {
+    flex-basis: 90%;
   }
 }
 
