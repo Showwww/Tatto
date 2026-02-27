@@ -1,0 +1,30 @@
+/* MARQUEE */
+.marquee-section {
+  overflow: hidden;
+  background: var(--ink);
+  padding: 1.2rem 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 0;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  color: var(--cream);
+  padding: 0 3rem;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.marquee-item.accent {
+  color: var(--gold);
+  opacity: 1;
+}
+

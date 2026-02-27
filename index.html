@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тутту Майст</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/marquee.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="stylesheet" href="./css/craft.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">Тутту Майст</div>
+      <ul class="nav-links">
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#work">Роботи</a></li>
+        <li><a href="#craft">Майстерність</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hero-eyebrow">Творець / Художник / Візіонер</p>
+        <h1 class="hero-name">
+          Тутту<br /><em>Майст</em>
+        </h1>
+        <p class="hero-tagline">
+          Де межі між мистецтвом і реальністю стають найцікавішим місцем для
+          перебування.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn-primary"><span>Переглянути роботи</span></a>
+          <a href="#contact" class="btn-secondary">Написати мені</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <span class="marquee-item">Дизайн</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Творчість</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Візуальна Мова</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Мистецтво</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Ідентичність</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Культура</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Дизайн</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Творчість</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Візуальна Мова</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Мистецтво</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Ідентичність</span>
+        <span class="marquee-item accent">✦</span>
+        <span class="marquee-item">Культура</span>
+        <span class="marquee-item accent">✦</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-label">Про Мене</div>
+      <div class="about-content reveal">
+        <h2>
+          Я не просто<br /><em>роблю речі —</em><br />я їх відчуваю.
+        </h2>
+        <p>
+          Кожна лінія, колір та форма — це не випадковість, а свідомий вибір.
+          Мій підхід до творчості виростає з глибокого розуміння того, що
+          мистецтво — це мова без перекладу.
+        </p>
+        <p>
+          Я працюю на перетині традиції та сучасності, де коріння стає
+          натхненням для чогось зовсім нового та несподіваного.
+        </p>
+        <div class="about-stats">
+          <div>
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Років досвіду</div>
+          </div>
+          <div>
+            <div class="stat-num">84</div>
+            <div class="stat-label">Проєктів</div>
+          </div>
+          <div>
+            <div class="stat-num">32</div>
+            <div class="stat-label">Клієнти</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="work-carousel">
+        <div class="work-track" id="workTrack"></div>
+      </div>
+    </section>
+
+    <!-- CRAFT -->
+    <section class="craft" id="craft">
+      <div class="craft-left reveal">
+        <h2>Майстерність<br />у деталях</h2>
+        <p>
+          Справжня якість ховається там, де більшість перестає дивитись. Я
+          будую кожну роботу так, наче вона буде єдиною.
+        </p>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Візуальний дизайн</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Концептуальне мислення</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Брендинг та ідентичність</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Цифрові медіа</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 82%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="craft-visual reveal">
+        <div class="craft-box-1"></div>
+        <div class="craft-box-2"></div>
+        <div class="craft-quote">
+          <blockquote>
+            "Мистецтво — це не те, що ти бачиш, а те, що ти змушуєш інших
+            побачити."
+          </blockquote>
+          <cite>— Едгар Дега</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <h2>Давай<br /><span>створимо</span><br />разом</h2>
+          <p>
+            Є ідея, що хочеш втілити? Я завжди відкритий до нових проєктів,
+            співпраці та розмов про творчість.
+          </p>
+          <div class="socials">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Behance</a>
+            <a href="#" class="social-link">Telegram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-group">
+            <label>Твоє ім'я</label>
+            <input type="text" placeholder="Як тебе звати?" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="твій@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Повідомлення</label>
+            <textarea placeholder="Розкажи про свою ідею..."></textarea>
+          </div>
+          <button class="submit-btn">Надіслати повідомлення</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Тутту Майст. Усі права захищено.</p>
+      <div class="footer-logo">ТМ</div>
+      <p>Зроблено з ♡ в Україні</p>
+    </footer>
+
+    <script src="./js/cursor.js"></script>
+    <script src="./js/reveal.js"></script>
+    <script src="./js/work-carousel.js"></script>
+  </body>
+</html>

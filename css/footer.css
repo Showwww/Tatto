@@ -1,0 +1,23 @@
+/* FOOTER */
+footer {
+  background: #080705;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: rgba(245, 239, 230, 0.2);
+  font-weight: 300;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+  color: rgba(245, 239, 230, 0.15);
+}
+
