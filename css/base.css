@@ -152,7 +152,6 @@ body::before {
     grid-row: span 1;
     aspect-ratio: 3/4;
   }
-  .work-header,
   .contact {
     padding: 5rem 2rem;
   }

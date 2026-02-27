@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/marquee.css" />
     <link rel="stylesheet" href="./css/about.css" />
-    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/craft.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -134,12 +134,31 @@
       </div>
     </section>
 
-    <!-- WORK -->
-    <section class="work" id="work">
-      <div class="work-carousel">
-        <div class="work-track" id="workTrack"></div>
+    <!-- CAROUSEL -->
+    <section class="carousel" id="work">
+      <div class="carousel-inner">
+        <button
+          type="button"
+          class="carousel-arrow carousel-arrow--prev"
+          aria-label="Попереднє фото"
+        >
+          ‹
+        </button>
+        <div class="carousel-track" id="carouselTrack"></div>
+        <button
+          type="button"
+          class="carousel-arrow carousel-arrow--next"
+          aria-label="Наступне фото"
+        >
+          ›
+        </button>
       </div>
     </section>
+
+    <div class="carousel-lightbox" id="carouselLightbox" aria-hidden="true">
+      <div class="carousel-lightbox-backdrop"></div>
+      <img class="carousel-lightbox-img" alt="" />
+    </div>
 
     <!-- CRAFT -->
     <section class="craft" id="craft">

@@ -100,10 +100,12 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 1002;
   }
 
   .nav-burger {
     display: flex;
+    z-index: 1003;
   }
 
   .nav-links {
@@ -123,7 +125,7 @@ nav {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 99;
+    z-index: 1001;
   }
 
   .nav.nav-open .nav-links {

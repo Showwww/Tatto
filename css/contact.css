@@ -155,20 +155,66 @@
   }
 
   .contact-inner {
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .contact-left,
+  .contact-form {
+    min-width: 0;
+    width: 100%;
+  }
+
+  /* Блок 1: текст */
+  .contact-left {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(245, 239, 230, 0.12);
+    text-align: center;
+  }
+
+  .contact-left p {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Блок 2: форма */
+  .contact-form {
+    padding-top: 3rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 100%;
+    min-height: 48px;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 600px) {
   .contact {
-    padding: 4rem 1.5rem;
+    padding: 4rem 1.25rem;
   }
 
   .contact-inner {
-    gap: 2.5rem;
+    gap: 0;
+  }
+
+  .contact-left {
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
   .contact-form {
+    padding-top: 2.5rem;
     width: 100%;
   }
 
@@ -192,6 +238,7 @@
   .socials {
     flex-wrap: wrap;
     gap: 1.25rem;
+    justify-content: center;
   }
 }
 
