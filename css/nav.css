@@ -6,23 +6,30 @@ nav {
   right: 0;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1.25rem 3rem 1.75rem;
   mix-blend-mode: multiply;
 }
 
 .nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.35em;
-  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-img {
+  height: 80px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   list-style: none;
+  margin-top: 0.75rem;
 }
 
 .nav-links a {

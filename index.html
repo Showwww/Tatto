@@ -6,13 +6,14 @@
     <title>Тутту Майст</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Bebas+Neue&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Bebas+Neue&family=Marck+Script&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/hero-particles.css" />
     <link rel="stylesheet" href="./css/marquee.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/work.css" />
@@ -26,11 +27,16 @@
 
     <!-- NAV -->
     <nav>
-      <div class="nav-logo">Тутту Майст</div>
+      <div class="nav-logo">
+        <img
+          src="./assets/images/logo/logo.png"
+          alt="Тутту Майст — логотип"
+          class="nav-logo-img"
+        />
+      </div>
       <ul class="nav-links">
         <li><a href="#about">Про мене</a></li>
         <li><a href="#work">Роботи</a></li>
-        <li><a href="#craft">Майстерність</a></li>
         <li><a href="#contact">Контакт</a></li>
       </ul>
     </nav>
@@ -40,15 +46,14 @@
       <div class="hero-left">
         <p class="hero-eyebrow">Творець / Художник / Візіонер</p>
         <h1 class="hero-name">
-          Тутту<br /><em>Майст</em>
+          RUDA<br />
         </h1>
         <p class="hero-tagline">
-          Де межі між мистецтвом і реальністю стають найцікавішим місцем для
-          перебування.
+          Десь межі між мистецтвом і реальністю 
         </p>
         <div class="hero-cta">
-          <a href="#work" class="btn-primary"><span>Переглянути роботи</span></a>
-          <a href="#contact" class="btn-secondary">Написати мені</a>
+            <a href="#work" class="btn-primary"><span>Написати мені</span></a>
+          <a href="#contact" class="btn-secondary">Роботи</a>
         </div>
       </div>
 
@@ -90,32 +95,36 @@
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <div class="section-label">Про Мене</div>
-      <div class="about-content reveal">
-        <h2>
-          Я не просто<br /><em>роблю речі —</em><br />я їх відчуваю.
-        </h2>
-        <p>
-          Кожна лінія, колір та форма — це не випадковість, а свідомий вибір.
-          Мій підхід до творчості виростає з глибокого розуміння того, що
-          мистецтво — це мова без перекладу.
-        </p>
-        <p>
-          Я працюю на перетині традиції та сучасності, де коріння стає
-          натхненням для чогось зовсім нового та несподіваного.
-        </p>
-        <div class="about-stats">
-          <div>
-            <div class="stat-num">7+</div>
-            <div class="stat-label">Років досвіду</div>
+      <div class="about-inner reveal">
+        <div class="about-label-row">
+          <span class="about-label">про мене</span>
+        </div>
+
+        <div class="about-main">
+          <div class="about-photo">
+            <img
+              src="./assets/images/she/Знімок екрана 2026-02-27 о 11.36.49 дп.png"
+              alt="RUDA — портрет"
+            />
           </div>
-          <div>
-            <div class="stat-num">84</div>
-            <div class="stat-label">Проєктів</div>
+
+          <div class="about-heading">
+            <p class="about-heading-main">Hey, I’m Anastasia!</p>
+            <p class="about-heading-sub">And my main inspiration is you.</p>
           </div>
-          <div>
-            <div class="stat-num">32</div>
-            <div class="stat-label">Клієнти</div>
+
+          <div class="about-text-cols">
+            <p>
+              Мені подобається працювати з людьми та створювати щось з нуля, що
+              назавжди залишиться на людському тілі. Я роблю татуювання від руки
+              та у фрістайлі — це про свободу та почуття.
+            </p>
+            <p>
+              У кожного є своя особлива енергетика, яку я відчуваю вже в перші
+              хвилини нашої зустрічі: як ти посміхаєшся, як ти говориш, як ти
+              себе почуваєш. У мене в голові одразу народжується образ — де я
+              вже бачу майбутній дизайн саме твого татуювання.
+            </p>
           </div>
         </div>
       </div>
