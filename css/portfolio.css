@@ -1,0 +1,69 @@
+/* PORTFOLIO — сітка як Instagram */
+.portfolio {
+  padding: 6rem 4rem 8rem;
+  background: var(--cream);
+}
+
+.portfolio-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .portfolio {
+    padding: 5rem 2rem 6rem;
+  }
+
+  .portfolio-grid {
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+    max-width: 100%;
+  }
+
+  .portfolio-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}

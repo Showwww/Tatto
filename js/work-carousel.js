@@ -94,3 +94,16 @@ if (carouselTrack && prevArrow && nextArrow) {
   }
 }
 
+// Портфоліо: клік по фото відкриває той самий лайтбокс
+if (lightbox && lightboxImg) {
+  document.querySelectorAll('.portfolio-grid img').forEach((img) => {
+    img.addEventListener('click', (e) => {
+      e.preventDefault()
+      lightboxImg.src = img.src
+      lightboxImg.alt = img.alt
+      lightbox.classList.add('is-open')
+      lightbox.setAttribute('aria-hidden', 'false')
+    })
+  })
+}
+

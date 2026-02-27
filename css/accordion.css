@@ -1,0 +1,150 @@
+/* ACCORDION — правила догляду */
+.accordion-section {
+  padding: 8rem 4rem 10rem;
+  background: var(--cream);
+}
+
+.accordion-block {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-block .block-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.accordion-header {
+  position: relative;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header:hover .bg-number {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item.active .bg-number {
+  color: rgba(0, 0, 0, 0.08);
+}
+
+.bg-number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.06);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+  transition: color 0.2s;
+}
+
+.accordion-block .header-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-left: 6rem;
+  letter-spacing: -0.02em;
+}
+
+.accordion-icon {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--rust);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s;
+  padding: 0 0 0 6rem;
+  color: var(--gray);
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  font-family: 'Cormorant Garamond', serif;
+  background: transparent;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 400px;
+  padding-bottom: 1.8rem;
+}
+
+.accordion-content p {
+  margin-bottom: 1rem;
+}
+
+.accordion-content small {
+  color: var(--rust);
+  font-size: 0.75rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+@media (max-width: 900px) {
+  .accordion-section {
+    padding: 6rem 2rem 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .accordion-block .header-text {
+    font-size: 1.35rem;
+    margin-left: 4rem;
+  }
+
+  .bg-number {
+    font-size: 5.5rem;
+  }
+
+  .accordion-content {
+    padding-left: 4rem;
+    font-size: 1rem;
+  }
+
+  .accordion-block .block-title {
+    font-size: 2rem;
+  }
+
+  .accordion-section {
+    padding: 4rem 1.5rem 6rem;
+  }
+}
