@@ -17,6 +17,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+nav:hover .nav-logo {
+  transform: scale(1.18);
 }
 
 .nav-logo-img {
@@ -33,9 +38,9 @@ nav {
 }
 
 .nav-links a {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.15em;
   color: var(--ink);
   text-decoration: none;

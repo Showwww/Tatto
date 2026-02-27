@@ -76,9 +76,9 @@
   border-bottom: 1px solid rgba(245, 239, 230, 0.2);
   padding: 0.75rem 0;
   color: var(--cream);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 400;
   outline: none;
   transition: border-color 0.3s;
   resize: none;
