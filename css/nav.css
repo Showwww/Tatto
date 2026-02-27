@@ -21,7 +21,7 @@ nav {
 }
 
 nav:hover .nav-logo {
-  transform: scale(1.18);
+  transform: scale(1.5);
 }
 
 .nav-logo-img {

@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/craft.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/accordion.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
@@ -47,7 +49,9 @@
       <ul class="nav-links">
         <li><a href="#about">Про мене</a></li>
         <li><a href="#work">Роботи</a></li>
-        <li><a href="#contact">Контакт</a></li>
+        <li><a href="#care">Догляд</a></li>
+        <li><a href="#contact">Контакт</a></li> 
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
 
@@ -138,32 +142,6 @@
       </div>
     </section>
 
-    <!-- CAROUSEL -->
-    <section class="carousel" id="work">
-      <div class="carousel-inner">
-        <button
-          type="button"
-          class="carousel-arrow carousel-arrow--prev"
-          aria-label="Попереднє фото"
-        >
-          ‹
-        </button>
-        <div class="carousel-track" id="carouselTrack"></div>
-        <button
-          type="button"
-          class="carousel-arrow carousel-arrow--next"
-          aria-label="Наступне фото"
-        >
-          ›
-        </button>
-      </div>
-    </section>
-
-    <div class="carousel-lightbox" id="carouselLightbox" aria-hidden="true">
-      <div class="carousel-lightbox-backdrop"></div>
-      <img class="carousel-lightbox-img" alt="" />
-    </div>
-
     <!-- CRAFT -->
     <section class="craft" id="craft">
       <div class="craft-left reveal">
@@ -220,6 +198,71 @@
             побачити."
           </blockquote>
           <cite>— Едгар Дега</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <div class="gallery-inner">
+        <div class="gallery-label-row">
+          <span class="gallery-label">галерея</span>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-22 о 8.46.56 пп.png"
+              alt="Татуювання 1"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 10.59.05 дп.png"
+              alt="Татуювання 2"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.01.19 дп.png"
+              alt="Татуювання 3"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.01.56 дп.png"
+              alt="Татуювання 4"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.02.21 дп.png"
+              alt="Татуювання 5"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.03.12 дп.png"
+              alt="Татуювання 6"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.04.33 дп.png"
+              alt="Татуювання 7"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.05.22 дп.png"
+              alt="Татуювання 8"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./assets/images/Знімок екрана 2026-02-23 о 11.06.04 дп.png"
+              alt="Татуювання 9"
+            />
+          </figure>
         </div>
       </div>
     </section>
@@ -292,14 +335,210 @@
       </div>
     </section>
 
+    <!-- CAROUSEL -->
+    <section class="carousel" id="work">
+      <div class="carousel-inner">
+        <button
+          type="button"
+          class="carousel-arrow carousel-arrow--prev"
+          aria-label="Попереднє фото"
+        >
+          ‹
+        </button>
+        <div class="carousel-track" id="carouselTrack"></div>
+        <button
+          type="button"
+          class="carousel-arrow carousel-arrow--next"
+          aria-label="Наступне фото"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+
+    <div class="carousel-lightbox" id="carouselLightbox" aria-hidden="true">
+      <div class="carousel-lightbox-backdrop"></div>
+      <img class="carousel-lightbox-img" alt="" />
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="faq-inner reveal">
+        <div class="faq-block">
+          <div class="faq-label-row">
+            <span class="faq-label">faq</span>
+          </div>
+          <h2 class="faq-title">часті запитання</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">01</span>
+                <span class="faq-question-text">Чи боляче робити тату?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Відчуття залежать від зони нанесення, розміру роботи та
+                  індивідуального больового порогу. Найбільш чутливі ділянки —
+                  ребра, шия, стопа. Більшість клієнтів описують процес як
+                  подряпування або легке печіння.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">02</span>
+                <span class="faq-question-text">Скільки триває сеанс?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Маленьке тату — 30–90 хвилин. Середнє — 2–4 години. Великі
+                  проєкти виконуються у кілька сеансів.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">03</span>
+                <span class="faq-question-text">Скільки коштує тату?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Вартість залежить від розміру, складності ескізу, стилю та
+                  часу роботи. Точну ціну можна визначити після консультації.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">04</span>
+                <span class="faq-question-text"
+                  >Як підготуватися до сеансу?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Рекомендується добре виспатися, поїсти перед процедурою, не
+                  вживати алкоголь за 24 години та одягнути зручний одяг.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">05</span>
+                <span class="faq-question-text"
+                  >Як доглядати за тату після сеансу?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Потрібно обробляти тату антисептиком, наносити загоювальний
+                  крем, уникати сонця, води та тертя. Повне загоєння триває 2–4
+                  тижні.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">06</span>
+                <span class="faq-question-text"
+                  >Чи можна робити тату влітку?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Так, але слід уникати активного сонця та купання у водоймах до
+                  повного загоєння тату.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">07</span>
+                <span class="faq-question-text"
+                  >Чи можна виправити старе тату?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Так. Можливі варіанти: перекриття (cover-up), корекція або
+                  лазерне видалення перед новою роботою.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">08</span>
+                <span class="faq-question-text"
+                  >Чи можна робити тату на шрамах?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Так, але лише після повного загоєння шраму (не раніше ніж
+                  через 12 місяців). Родимки не проколюються.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">09</span>
+                <span class="faq-question-text"
+                  >Чи вигоряє тату з часом?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Так, пігмент може світлішати під впливом сонця та особливостей
+                  шкіри. Через кілька років може знадобитися корекція.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="faq-number">10</span>
+                <span class="faq-question-text"
+                  >Чи стерильні інструменти?</span
+                >
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Використовуються одноразові голки, стерильні матеріали та
+                  професійне обладнання з дотриманням усіх санітарних норм.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="contact-inner">
         <div class="contact-left reveal">
           <h2>Давай<br /><span>створимо</span><br />разом</h2>
           <p>
-            Є ідея, що хочеш втілити? Я завжди відкритий до нових проєктів,
-            співпраці та розмов про творчість.
+            Є ідея, що хочеш втілити? Я завжди відкрита до нових проєктів.
           </p>
           <div class="socials">
             <a href="#" class="social-link">Instagram</a>
@@ -337,5 +576,6 @@
     <script src="./js/nav.js"></script>
     <script src="./js/work-carousel.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/faq.js"></script>
   </body>
 </html>
