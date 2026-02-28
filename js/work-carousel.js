@@ -6,7 +6,7 @@ const lightboxImg = lightbox ? lightbox.querySelector('.carousel-lightbox-img') 
 
 if (carouselTrack && prevArrow && nextArrow) {
   const imagePaths = [
-    './assets/images/Знімок екрана 2026-02-22 о 8.46.56 пп.png',
+    './assets/images/Знімок екрана 2026-02-23 о 11.07.59 дп.png',
     './assets/images/Знімок екрана 2026-02-23 о 10.59.05 дп.png',
     './assets/images/Знімок екрана 2026-02-23 о 11.01.19 дп.png',
     './assets/images/Знімок екрана 2026-02-23 о 11.01.56 дп.png',
