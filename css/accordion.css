@@ -1,19 +1,19 @@
 /* ACCORDION — правила догляду (стилі як у блоку «Про мене») */
 .accordion-section {
-  padding: 8rem 4rem 10rem;
+  padding: 6rem 4rem 8rem;
 }
 
 .accordion-inner {
   max-width: 1100px;
   margin: 0 auto;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .accordion-label-row {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .accordion-label {
@@ -43,7 +43,7 @@
 
 .accordion-header {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   cursor: pointer;
   user-select: none;
   display: flex;
@@ -78,15 +78,15 @@
   position: relative;
   z-index: 1;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: var(--ink);
-  margin-left: 6rem;
+  margin-left: 5rem;
   letter-spacing: -0.02em;
 }
 
 .accordion-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: var(--rust);
   transition: transform 0.3s ease;
@@ -102,22 +102,22 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out, padding 0.3s;
-  padding: 0 0 0 6rem;
+  padding: 0 0 0 5rem;
   color: #4a4035;
   font-weight: 400;
-  line-height: 1.85;
-  font-size: 1.15rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
   font-family: var(--font-body);
   background: transparent;
 }
 
 .accordion-item.active .accordion-content {
   max-height: 400px;
-  padding-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
 }
 
 .accordion-content p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .accordion-content small {
@@ -130,26 +130,39 @@
 
 @media (max-width: 900px) {
   .accordion-section {
-    padding: 6rem 2rem 8rem;
+    padding: 4rem 2rem 6rem;
   }
 }
 
 @media (max-width: 600px) {
   .accordion-section {
-    padding: 4rem 1.5rem 6rem;
+    padding: 2.5rem 1rem 4rem;
+  }
+
+  .accordion-label {
+    font-size: 0.55rem;
   }
 
   .accordion-block .header-text {
-    font-size: 1.45rem;
-    margin-left: 4rem;
+    font-size: 1.3rem;
+    margin-left: 3.5rem;
   }
 
   .bg-number {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+  }
+
+  .accordion-icon {
+    font-size: 1.3rem;
   }
 
   .accordion-content {
-    padding-left: 4rem;
-    font-size: 1.1rem;
+    padding-left: 3.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .accordion-header {
+    padding: 1rem 0;
   }
 }

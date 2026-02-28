@@ -1,41 +1,40 @@
-const cursor = document.getElementById('cursor')
-const ring = document.getElementById('cursorRing')
+const cursor = document.getElementById("cursor");
+const ring = document.getElementById("cursorRing");
 
-let mx = 0
-let my = 0
-let rx = 0
-let ry = 0
+let tx = -100;
+let ty = -100;
+let cx = -100;
+let cy = -100;
+let rx = -100;
+let ry = -100;
 
-document.addEventListener('mousemove', (e) => {
-  mx = e.clientX
-  my = e.clientY
-  cursor.style.left = `${mx}px`
-  cursor.style.top = `${my}px`
-})
+document.addEventListener("pointermove", (e) => {
+  tx = e.clientX;
+  ty = e.clientY;
+});
 
-function animateRing() {
-  rx += (mx - rx) * 0.12
-  ry += (my - ry) * 0.12
-  ring.style.left = `${rx}px`
-  ring.style.top = `${ry}px`
-  requestAnimationFrame(animateRing)
+function animate() {
+  cx += (tx - cx) * 0.35;
+  cy += (ty - cy) * 0.35;
+  cursor.style.left = `${cx}px`;
+  cursor.style.top = `${cy}px`;
+
+  rx += (tx - rx) * 0.25;
+  ry += (ty - ry) * 0.25;
+  ring.style.left = `${rx}px`;
+  ring.style.top = `${ry}px`;
+
+  requestAnimationFrame(animate);
 }
+animate();
 
-animateRing()
-
-document.querySelectorAll('a, button').forEach((el) => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.width = '20px'
-    cursor.style.height = '20px'
-    ring.style.width = '60px'
-    ring.style.height = '60px'
-  })
-
-  el.addEventListener('mouseleave', () => {
-    cursor.style.width = '10px'
-    cursor.style.height = '10px'
-    ring.style.width = '36px'
-    ring.style.height = '36px'
-  })
-})
-
+document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    cursor.classList.add("hover");
+    ring.classList.add("hover");
+  });
+  el.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+    ring.classList.remove("hover");
+  });
+});

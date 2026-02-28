@@ -23,15 +23,24 @@ p {
 
 .cursor {
   position: fixed;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: var(--rust);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.3s, height 0.3s, background 0.3s;
+  transition: width 0.15s, height 0.15s, background 0.15s, border-radius 0.25s;
   mix-blend-mode: multiply;
+  will-change: left, top;
+}
+
+.cursor.hover {
+  width: 48px;
+  height: 48px;
+  background: var(--cream);
+  border-radius: 4px;
+  border: 1.5px solid var(--rust);
 }
 
 .cursor-ring {
@@ -43,7 +52,14 @@ p {
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
-  transition: transform 0.18s ease, width 0.3s, height 0.3s;
+  transition: width 0.2s, height 0.2s, border-radius 0.25s;
+  will-change: left, top;
+}
+
+.cursor-ring.hover {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
 }
 
 body:hover .cursor {
