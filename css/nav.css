@@ -9,7 +9,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 3rem 1.75rem;
+  padding: 3rem 3rem 1.75rem;
   mix-blend-mode: multiply;
 }
 
@@ -18,7 +18,7 @@ nav {
   align-items: flex-start;
   justify-content: flex-start;
   order: 1;
-  margin-top: -1rem;
+  margin-top: -3  rem;
 }
 
 .nav-logo-img {
@@ -40,7 +40,7 @@ nav {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 400;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   color: var(--ink);
   text-decoration: none;
   text-transform: uppercase;
